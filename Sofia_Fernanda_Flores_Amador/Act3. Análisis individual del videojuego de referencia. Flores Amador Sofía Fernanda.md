@@ -1,7 +1,8 @@
-#### **The Legend of Zelda: Twilight Princess.**
+# **The Legend of Zelda: Twilight Princess.**
 
 
 *Dime Link, ¿no sientes tu también una extraña tristeza cuando cae el Sol?*
+
 — Moy
 
 
@@ -29,6 +30,20 @@ Esta transformación trae consigo nuevas mecánicas. Como Link lobo se puede act
 
 Aunque se agregan estas reglas y dinámicas únicas, se mantiene el estilo y acciones generales de otros juegos de Zelda. Como Link humano, el jugador puede utilizar ataques y técnicas avanzadas de esgrima (enseñados por el espíritu del Heroe del Tiempo) con su arma y escudo, puede cabalgar y moverse con facilidad por grandes distancias con Epona e incluso luchar o disparar flechas mientras monta a caballo. Se mantienen también mecánicas como la compra de equipo o pociones mediante Rupias, obtener corazones de jarrones (simplemente un clásico en la saga) y conseguir fragmentos de corazones para obtener más vida total.
 
+Salen y Zimmerman en su libro "Rules of play" proponen 3 tipos de reglas para entender qué y cómo operan las reglas en los videojuegos: las Reglas Operacionales (literalmente las reglas del juego), Las Reglas Constituidas (lo que se encuentra debajo de la superficie, la lógica del juego), y las Reglas Implícitas (reglas no escritas sobre el comportamiento adecuado del juego (Salen & Zimmerman, 2004). Estas reglas pueden verse también en Twilight Princess.
+
+Las reglas operacionales son las instrucciones explícitas que se nos muestran desde la introducción, qué botones presionar para cambiar los objetos de Link, para abrir el inventario, para atacar o para fijar a un enemigo. También una regla es el hecho de que Link Lobo no puede utilizar los objetos de Link humano, así como Link humano no puede usar los sentidos de Link Lobo; esto se le explica al jugador mediante Midna cuando Link es transformado. 
+
+Las reglas constituidas, aunque no están escritas explícitamente para el jugador, son todas las "físicas" internas del juego, como el sistema de daño del juego donde, si la vida de Link llega a 0, el juego vuelve a la última ubicación guardada, el último punto de control, o, de tener hadas embotelladas en el inventario, se usan de forma automática. Otro ejemplo sería la estructura de las mazmorras, donde se sigue un ciclo de exploración, obtención del mapa, recolección de llaves pequeñas (abrir zonas de la mazmorra o crear "atajos"), recolección de algún ítem único (necesario para avanzar en el juego y derrotar al mini jefe y jefe), recolección de llave "del jefe" (la que abre la puerta a la batalla del jefe de la mazmorra) y eliminación del jefe. Todo esto debe cumplirse antes de salir de la mazmorra. 
+
+Finalmente, las reglas implícitas derivan del jugador; no están escritas y no forman parte de la lógica del juego, se asumen por el jugador. Un ejemplo podría ser los duelos contra jefes o incluso contra el propio Ganondorf. Aunque en estos combates se puede solo "atacar a lo loco" (yo llegué ha hacerlo cuando jugué este juego por primera vez), esto rara vez funciona, y lo digo por experiencia propia; lo mejor es ser mas táctico, usar el escudo y contratacar con armas del inventario o con las técnicas aprendidas por el espíritu.
+
+Un ejemplo más claro y, quizás, más implícito, es algo que cualquier jugador que haya jugado antes una entrega de Zelda sabe: todo lo "rompible" puede tener rupias o corazones ocultos, no se necesita hacer pero suele funcionar. ¿Por qué razón es que hay tantos memes de Zelda sobre romper una tienda completa de jarrones o sobre que Link es un "podador de césped profesional"? Bueno, justo por esta regla implícita. Mejor romper todo para encontrar alguna rupia.
+
+Pero, ¿por qué hay tanto afán por conseguir estas rupias? ¿Por qué muchos jugadores se pasan tanto tiempo buscando rupias en jarrones o en el césped? Por el valor endógeno que tienen las rupias. Shell en su libro "The art of game design" explica que existen 10 cualidades fundamentales que componen un juego: es voluntario, tiene objetivos, conflicto, reglas, victorias y derrotas, interactividad, desafío, inmersión, es un sistema cerrado y, de donde parte el valor que le ponemos a las rupias en prácticamente cualquier juego de Zelda, el valor interno (Shell, 2008).
+
+Las rupias per se no valen nada, solo son monedas virtuales, no tienen un valor monetario real, entonces, ¿por qué las buscamos tanto? Porque el sistema del juego les otorga un valor real. Al conseguir cierta cantidad de rupias podemos comprar más equipo, pociones, piezas de corazón, participar en minijuegos o comprar pociones para curación. Las rupias tienen valor porque el juego les da valor mediante sus sistema de juego, y es justo ese valor endógeno que nos trasmite lo que nos hace buscar las rupias en cualquier parte del mapa.
+
 Ahora bien, ¿en qué género podría clasificarse Twilight Princess? Al igual que todos los juegos de la saga de Zelda, Twilight Princess está catalogado como un juego de Acción-Aventura pero, ¿es real y puramente esto? A diferencia de un libro o una película, un juego no se puede encasillar en una sola categoría porque no son solo narrativa, son procesos interactivos (Clarke et al, 2017). Los juegos evolucionan, mezclan modelos de otros juegos agregando un poco de "su cosecha", agregando elementos innovadores que los hagan destacar, pero decir que un juego es solo un RPG o un FPS está errado. 
 
 Rara vez un juego exitoso puede catalogarse solo en un género. Según el estudio "An Operational Study of Video Games’ Genres" de Alaa A. Qaffas, los juegos exitosos no son puramente un solo género sino una combinación de varios. Además, el mismo estudio logra identificar 16 géneros representados en total al analizar los 100 juegos con mejor ranking histórico, sin embargo solo 6 de los 16 acaparan más del 80% de las menciones de juegos exitosos: aventura, RPG, shooter, plataformas, puzles y estrategia (Qaffas, 2020). Twilight Princess combina elementos de los dos primeros géneros: Es de aventura pero con algunos elementos de los juegos RPG.
@@ -49,15 +64,21 @@ El género de un juego nos ayuda más o menos saber qué esperar con dicho juego
 
 
 
-###### **Bibliografía**
+#### **Bibliografía**
 
 El equipo de 3DJuegos. (25 de Mayo de 2019). 3D Juegos. Obtenido de https://www.3djuegos.com/juegos/the-legend-of-zelda-breath-of-the-wild/noticias/es-zelda-un-rpg-shigeru-miyamoto-respondio-a-la-pregunta-190525-93134
+
 Fundación Princesa de Austrias. (s.f.). Obtenido de https://www.fpa.es/es/premios-princesa-de-asturias/premiados/2012-shigeru-miyamoto/?texto=trayectoria
 Harsha, S. (16 de Agosto de 2023). Juego Studios. Obtenido de https://www.juegostudio.com/blog/rpg-features
+
 Millán, A. (4 de Diciembre de 2016). Nintendo explica por qué ‘The Wind Waker 2’ se convirtió en ‘Twilight Princess’. Obtenido de Nintenderos: https://nintenderos.com/2016/12/nintendo-explica-por-que-the-wind-waker-2-se-convirtio-en-twilight-princess/
+
 PSI Gaming. (22 de Mayo de 2023). La Profunda Madurez de Zelda: Twilight Princess. Obtenido de YouTube: https://www.youtube.com/watch?v=8ZD7IWqNIYI
+
 Real Academia Española. (s.f.). Diccionario de la Lengua Española. Obtenido de https://dle.rae.es/melancol%C3%ADa?m=form
+
 Ríos, J. (12 de Mayo de 2024). Infobar. Obtenido de https://www.infobae.com/tecno/2024/05/12/que-son-los-juegos-de-rol-y-cuales-son-los-mas-famosos/
+
 The Legend of Zelda Wiki. (s.f.). Obtenido de Fandom: https://zelda.fandom.com/es/wiki/Moy
 
 
