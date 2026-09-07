@@ -3,7 +3,7 @@
 **Propuesta narrativa**
 
 - Tema: El orden contra el caos.  
-- Mundo: La sala principal de una mansión embrujada donde la actividad paranormal se manifiesta como suciedad física llamada ectoplasma. Aplicando el *Triangle of Weirdness* de Scott Rogers, el ancla reside en una sola esquina: Actividades Raras (limpiar ectoplasma con aspiradora), situadas en un mundo reconocible (una mansión) y con un personaje ordinario (un conserje).   
+- Mundo: La sala principal de una mansión embrujada donde la actividad paranormal se manifiesta como suciedad física llamada ectoplasma. Aplicando el Triangle of Weirdness de Scott Rogers, el ancla reside en una sola esquina: Actividades Raras (limpiar ectoplasma con aspiradora), situadas en un mundo reconocible (una mansión) y con un personaje ordinario (un conserje).   
 - Conflicto: Tensión de recursos y espacio, la acumulación de ectoplasma crece progresivamente y satura la habitación, mientras que la herramienta del jugador tiene una cierta capacidad de almacenamiento.  
 - Meta del jugador: Sobrevivir durante una ronda cronometrada de 2 minutos manteniendo el nivel de suciedad acumulada de la habitación por debajo del 100%.  
 - Obstáculo principal: La capacidad máxima del tanque que es de 100 unidades y la necesidad de detenerse en el contenedor central durante 1.5 segundos para vaciarlo, quedando vulnerable al avance del desorden.
