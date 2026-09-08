@@ -1,3 +1,5 @@
+##Propuesta narrativa.
+
 ### Tema: 
 
 Es un juego sobre un hombre secuestrado que debe adivinar letras para completar una palabra en un juego de ahorcado mortal para salvar su vida y la de su familia.
