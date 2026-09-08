@@ -1,0 +1,26 @@
+## Perfil del jugador. 
+
+
+
+Resumen: Adolescente o adulto joven que busque terror como fuente de placer, que disfruta los desafíos y seguir reglas de un mundo imaginario siniestro, motivado por resolver un reto intelectual y explicar el misterio. 
+
+
+
+Handman es un juego de terror psicológico. Siguiendo los parámetros que utiliza la ESRB para catalogar juegos por rangos de edad, este juego probablemente estaría clasificado como T (Teen), para mayores de 13 años (y mayores de 15 en el SMECCV, Sistema Mexicano de Clasificación de Contenidos de Videojuegos) ya que contiene violencia, no explicita ni gráfica, violencia de animación.
+
+Rogers describe que no solo basta con definir un rango de edad (a partir de 12 años, por ejemplo), sino que hay que considerar que, sobre todo en los niños, ellos tienden a buscar juegos catalogados con mayor edad. Considerando esto, lo mejor sería considerar un rango un poco más alto que el que marca la ESRB en su clasificación Teen, a partir de 16 años. Aunque el juego no presentará violencia gráfica ni contenido sexual, la temática sí puede ser algo fuerte para un niño de 8 o 10 años; un público maduro cuenta, además, con un vocabulario más amplio, lo que podría facilitar adivinar las palabras o asociarlo con los mensajes que se presenten en el juego.
+
+Quizás como mujer me es difícil catalogar un juego para "hombres" o para "mujeres", considero que el género no es determinante para tus gustos y solo estigmatiza. Sin embargo, siguiendo lo que marca Shell en su libro "The Art of Game Design" sobre las diferencias de género, el juego podría estar enfocado un poco más hacia lo que tienden a buscar las mujeres, emociones y rompecabezas verbales. Los juegos de terror psicológico se basan, principalmente, en las emociones, dar miedo sin elementos sorpresivos. Insisto, no considero que esto defina si el juego es para hombres porque es "violento" o para mujeres porque es algo más algo más "sentimental", solo se está siguiendo lo que Shell marca sobre la demografía. 
+
+Un juego de terror psicológico con temática de ahorcado requiere que los jugadores busquen algunos placeres específicos de la lista de los 8 placeres de LeBlanc. La mecánica principal es adivinar palabras, es, al final, un rompecabezas, por lo que el placer del desafío es indispensable. Al ser de terror psicológico, la inmersión del jugador en el mundo es crucial para experimentar realmente las situaciones, así que el placer de la fantasía también debe estar el perfil del jugador junto con la sumisión, acatando voluntariamente las reglas del juego, como que perder implica pasar por la horca. Finalmente, un placer que no viene en los 8 placeres de Leblanc pero que Schell menciona, el Thriller, es quizás el más importante. Los juegos de terror permiten al jugador experimentar el placer de sentir el miedo y el terror psicológico desde la seguridad física de estar en su propio espacio.
+
+Al ser un juego corto (no más de 2 horas), el tipo de sesiones son cortas y el jugador requiere un nivel de experiencia casual o intermedio. No se requiere mucha experiencia previa para jugarlo, quizás conocer las reglas básicas de ahorcado, pero aún así se incluye un pequeño tutorial para familiarizar al jugador con las mecánicas del juego. La plataforma objetivo se plantea principalmente para PC; lo más importante aquí es el teclado para seleccionar las letras, además de que se plantea una mecánica similar a los "point and click", el personaje no se moverá, solo seleccionará los NPC y escogerá letras con su teclado para tratar de adivinar la palabra. 
+
+En cuanto a lo que menciona Dobrowolski en su estudio "Cognitive enhancement in video game players: The role of video game genre", este juego no cuenta con mecánicas de acción, no necesita que el jugador sea "multitasking" ni que siga múltiples objetos en pantalla o tenga buenos reflejos. El perfil cognitivo del jugador de este juego debe ser similar al de un jugador de rompecabezas habitual ya que, al final, este juego es un rompecabezas de ahorcado con un estilo sombrío.
+
+Ahora, ¿cómo influye este perfil en la estructura del juego? 
+
+Una de las motivaciones y placeres que busca el perfil del jugador es el desafío y el descubrimiento. El loop principal del juego consiste en seleccionar letras, adivinar la palabra, pasar a una ronda más compleja. Cada ronda requiere descubrir la información faltante y superar un obstáculo intelectual. El mundo, un lugar oscuro y algo claustrofóbico, busca la inmersión del jugador, algo clave en el terror psicológico y que queda con el perfil del jugador que busca fantasía como uno de los placeres, alguien que busca probar situaciones al límite fuera de la realidad (como jugar ahorcado para mantenerse con vida). 
+
+El juego se está planteando con una estructura por niveles (5 niveles, uno como tutorial), aumentando la dificultad en cada nivel, lo que queda con el perfil de un jugador que busca el placer en el desafío. Además, considerando que el jugador busca "el placer o diversión a través de la muerte", Handman hace que el jugador escoja a una persona quién será ahorcada si él pierde la ronda, lo que también se conecta con el placer de la sumisión al aceptar voluntariamente estas reglas impuestas por el juego.
+
