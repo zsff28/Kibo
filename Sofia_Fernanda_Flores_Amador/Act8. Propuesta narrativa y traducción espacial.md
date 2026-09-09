@@ -47,7 +47,7 @@ Una bodega industrial lúgubre, abandonada y oscura, cuya única fuente de ilumi
 ### 3 obstáculos:
 
 * Errores. Solo se permite errar 6 veces por ronda. Con cada error se dibuja una parte del ahorcado y se aprieta más la cuerda de los personajes, aumentando la presión psicológica. 
-* Pistas crípticas y complejas. Por cada ronda que avanza, relacionar la palabra con la frase comienza a ser más complicado (sobre todo en la c ronda).
+* Pistas crípticas y complejas. Por cada ronda que avanza, relacionar la palabra con la frase comienza a ser más complicado (sobre todo en la última ronda).
 * Asfixia. Se aumenta la tensión psicológica al incluir imágenes de los personajes con la soga cada vez más ajustada, mostrándose con signos cada vez más evidentes de asfixia. 
 
 
