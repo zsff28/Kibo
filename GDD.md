@@ -60,16 +60,27 @@ Game Flowchart. ¿Cómo se conecta la pantalla de inicio con Game over?
 Descripción del entorno.
 
 Mecánicas del juego.
+* Sistema HUD:  
+  * Barra de Suciedad Global: Ubicada en la parte superior central (`ProgressBar` de 0% a 100%).
+  * Tanque de Ectoplasma: Medidor con forma de frasco (100 unidades) al lado del personaje.
+  * Timer: Cuenta regresiva de `02:00` controlada por un nodo `Timer`.
 
-	Sistema HUD. Imágenes de estátus de salud, vidas, dinero, score o ranking, poder, skills, timer, mapa de navegación.  
-	Modo de combate, progresión de combate y combos. Movimientos, efecto y daño.  
-	Descripción de cada mecánica.  
-	Check Points.  
-Power ups.  
-	Sistema de vida. ¿Cuántas vidas? ¿Cómo se pierden vidas? ¿Qué pasa si se acaban?  
-	Condiciones de muerte y game over. ¿Qué sucede?  
-	Scoring  
-	Recompensas y economía.
+* Modo de combate:  
+  No hay combate directo contra el limpiador; la interacción es defensiva y de evasión.
+
+* Descripción de mecánicas clave:
+  1. Disparo de Ectoplasma: Al pulsar `ESPACIO`, el jugador gasta ectoplasma para rociar el piso.
+  2. Portal Espiritual (Centro de la sala): Zona para recargar 100 unidades de ectoplasma y ocultarse.
+  3. Aspirado del Limpiador: El NPC sigue rutas mediante `NavigationAgent` y aspira manchas, reduciendo el % de suciedad.
+  4. Linterna y Aturdimiento: Si la linterna o el conserje tocan al fantasma, este sufre un *Stun* de 3 segundos sin poder moverse ni disparar.
+
+* Checkpoints: No aplica (partidas cortas de 2 minutos).
+
+* Power-ups:
+   Ectoplasma Súper Viscoso: Reduce la velocidad de aspirado del conserje por 5 segundos.
+
+* Sistema de Vidas y Muerte:  
+  El fantasma no "muere", pero los *stuns* consumen un tiempo valioso, aumentando la probabilidad de perder por agotamiento de tiempo.  
 
 Progresión del juego  
 	  
