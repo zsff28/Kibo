@@ -2,23 +2,32 @@ Portada.
 
 Imagen de portada del juego.
 
-Título del juego.
+Título del juego:
+Sloppy Spectre
 
-Número de versión del documento.
+Número de versión del documento:
+Versión 1
 
 Nombre de los integrantes del equipo.
+Sofia Fernanda Flores Amador
+Jesús Emiliano Gutierrez Luna
+Ángel Federico López Ruiz
+Karol Citlaly Ramirez Martinez
 
-Fecha de publicación.
-
+Fecha de publicación:
+15 de Septiembre: 
 Número de versión.
+Version 1
 
 Tabla de contenido  
 Game Goals
 
 Historia del juego
 
-	¿Cómo el jugador comienza el juego?  
-	¿Cómo el jugador se mueve de un lugar a otro?  
+	¿Cómo el jugador comienza el juego? 
+	
+	¿Cómo el jugador se mueve de un lugar a otro? 
+	
 	¿Cómo termina?
 
 Gameplay
