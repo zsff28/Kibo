@@ -50,15 +50,28 @@ Descripción de cómo se presentan los niveles al jugador.
 	¿Cómo navega el jugador entre niveles?
 
 Experiencia de juego.
+* Descripción de la experiencia:
+  Un juego arcade rápido, tenso y cómico de "gato y ratón" donde el tiempo apremia constantemente.
 
-	Descripción de la experiencia de juego  
-Cómo ganar  
-	Cómo perder  
-	Número de rondas  
-Pantalla de inicio. Opciones disponibles para el jugador, detalles de archivo de guardado, opciones que el jugador puede cambiar (configuraciones)  
-Game Flowchart. ¿Cómo se conecta la pantalla de inicio con Game over?  
-Descripción del entorno.
+* Condiciones:  
+  * Ganar: Alcanzar el 80% de suciedad dentro de los 120 segundos.
+  * Perder: Que el medidor llegue a 0% de suciedad o que el temporizador llegue a 0.
 
+* Número de rondas:  
+  1 ronda rápida de 2 minutos por nivel/partida.
+
+* Pantalla de inicio y menú:  
+  * Opciones: Jugar, Selección de Nivel, Ajustes (Volumen, Sensibilidad, Mapeo de teclas), Créditos, Salir.
+  * Guardado: `ConfigFile` nativo de Godot o archivo JSON para almacenar progreso (estrellas por nivel y récords de tiempo).
+
+* Game Flowchart (Flujo de juego):
+  `Pantalla de Inicio` ➔ `Selección de Nivel` ➔ `Gameplay (2 min)` ➔ ¿100% Suciedad? 
+  * SÍ: `Pantalla de Victoria` ➔ `Siguiente Nivel / Menú`
+  * NO: `Pantalla de Game Over` ➔ `Reintentar / Menú`
+
+* Descripción del entorno: 
+  Gráficos estilizados *Cartoon*, iluminación tenue con contrastes fuertes generados por el cono de luz del conserje y el brillo fluorescente del ectoplasma verde.
+  
 Mecánicas del juego.
 * Sistema HUD:  
   * Barra de Suciedad Global: Ubicada en la parte superior central (`ProgressBar` de 0% a 100%).
