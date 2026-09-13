@@ -23,12 +23,14 @@ Tabla de contenido
 Game Goals
 
 Historia del juego
-
+Spooky es un pequeño y travieso fantasma que habita una mansión, donde su vida de vagar y desordenar se ve amenazada por el limpiador y su implacable limpieza, empeñado en desinfectar cada rincón con su aspiradora y linterna. Para reclamar tu territorio, decides expulsarlo manchando todo con ectoplasma hasta que el lugar sea completamente inhabitable y sucio.
 	¿Cómo el jugador comienza el juego? 
-	
+	El jugador inicia en el centro de la escena, emergiendo de un portal espiritual morado/azul tras un conteo de 3 segundos que al terminar aparecerá la frase "¡A ensuciar!".
 	¿Cómo el jugador se mueve de un lugar a otro? 
-	
+	Levitando libremente en 4 direcciones en vista superior 2D, atravesando todo el escenario sin colisiones de terreno y esquivando únicamente los conos de luz de la linterna del limpiador.	
 	¿Cómo termina?
+	Victoria final: Tras superar el nivel del vecindario al completar más del 80% de suciedad, spooky celebra y el vecindario queda cubierto de ectoplasma verde fluorescente.
+	Derrota: Si el tiempo expira sin alcanzar al menos el 80% o el escenario llega al 0% de suciedad, los limpiadores sanitizan el portal y Spooky queda desvanecido por una aspiradora.
 
 Gameplay
 
