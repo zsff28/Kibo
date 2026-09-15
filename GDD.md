@@ -19,7 +19,6 @@ Fecha de publicación:
 Número de versión.
 Version 1
 
-Tabla de contenido  
 Game Goals
 
 Historia del juego
@@ -67,7 +66,7 @@ Experiencia de juego.
   * Guardado: `ConfigFile` nativo de Godot o archivo JSON para almacenar progreso (estrellas por nivel y récords de tiempo).
 
 * Game Flowchart (Flujo de juego):
-  `Pantalla de Inicio` ➔ `Selección de Nivel` ➔ `Gameplay (2 min)` ➔ ¿100% Suciedad? 
+  `Pantalla de Inicio` ➔ `Selección de Nivel` ➔ `Gameplay (2 min)` ➔ ¿>= 80% Suciedad? 
   * SÍ: `Pantalla de Victoria` ➔ `Siguiente Nivel / Menú`
   * NO: `Pantalla de Game Over` ➔ `Reintentar / Menú`
 
