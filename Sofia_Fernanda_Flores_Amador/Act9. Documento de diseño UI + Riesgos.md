@@ -1,4 +1,4 @@
-#Diseño UI y Riesgos.
+# Diseño UI y Riesgos.
 
 ## ¿Cómo interactúa el jugador con el sistema y qué información recibe?
 
