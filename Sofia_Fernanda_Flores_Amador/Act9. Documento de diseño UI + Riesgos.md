@@ -1,3 +1,5 @@
+#Diseño UI y Riesgos.
+
 ## ¿Cómo interactúa el jugador con el sistema y qué información recibe?
 
 ### HUD, canales de información y Feedback.
