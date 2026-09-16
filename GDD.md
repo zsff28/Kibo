@@ -138,7 +138,7 @@ Nivel 2. Intermedio.
   * Tiempo: 120 segundos (02:00 minutos).
   * Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
 
-Nivel 3.
+Nivel 3. Difícil.
 
 * Descripción: Nivel final. El vecindario. En el centro se encuentra el portal para recargar el tanque. El nivel no cuenta con obstáculos fuera del enemigo principal: el limpiador.
 * Objetivo: Alcanzar al menos el 80% de suciedad en el suelo antes de que finalice el tiempo.
