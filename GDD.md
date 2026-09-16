@@ -187,20 +187,37 @@ Nivel 3. Difícil.Descripción: Nivel final. El vecindario. En el centro se encu
   * Tiempo: 120 segundos (02:00 minutos).
   * Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
 
-Player Characters  
-	  
-	Nombre, imagen de concepto, descripción de la motivación y relación con otros personajes jugables.  
-	Métricas del jugador. Movimientos, condiciones y daño.
+## 9. Player Characters
 
-Enemigos
+### Nombre e Imagen de Concepto
+**Spooky (El Fantasma)**
 
-	Arte conceptual.  
-	Descripción.  
-	Métricas.  
-	Patrones de movimiento.  
-	Ataque, daño que causa, y cómo causarle daño.  
-	Reacciones, daño, muerte.  
-	¿Se incluyen jefes?
+* **Motivación:** Reclamar su territorio expulsando al limpiador y transformando la pulcra mansión y el vecindario en un entorno completamente inhabitable y sucio.
+* **Relación con otros personajes:** Antagonista directo del Limpiador. Es el único personaje jugable.
+
+### Métricas del Jugador
+* **Movimiento:** Levitación libre en 4 direcciones sin colisiones con el terreno.
+* **Capacidad de Tanque:** 100 unidades de ectoplasma.
+* **Condición de Aturdimiento:** Inmovilizado por 3 segundos sin poder moverse ni disparar al entrar en contacto con la luz de la linterna.
+* **Daño:** No aplica daño a enemigos; suma porcentaje a la variable global `Suciedad_Zona`.
+
+---
+
+## 10. Enemigos
+
+### Arte Conceptual
+**El Limpiador (Conserje)**
+* **Descripción:** Enemigo equipado con aspiradora y linterna, encargado de patrullar y remover el ectoplasma.
+
+### Métricas
+* **Velocidad de Desplazamiento:**
+  * **Nivel 1 (Novato):** Lenta 
+  * **Nivel 2 (Estándar):** Moderada 
+  * **Nivel 3 (Experto):** Rápida 
+* **Ataque y Daño:** Cono de luz de linterna. Aplica aturdimiento de 3 segundos a Spooky y reduce la variable `Suciedad_Zona` al aspirar.
+* **Cómo Causarle Daño:** No se le puede atacar directamente. Se le derrota al alcanzar el $80\%$ de suciedad requerido antes de que venza el tiempo.
+* **Reacciones:** Alterna estados entre *Patrullando*, *Aspirando* y *Persiguiendo luz*.
+* **¿Se Incluyen Jefes?:** El Limpiador Experto del Nivel 3 actúa como el enemigo/jefe final del juego debido a su elevada velocidad y eficiencia de limpieza.
 
 Música y efectos especiales.  
 	Lista de música.  
