@@ -198,7 +198,7 @@ Nivel 3. Difícil.Descripción: Nivel final. El vecindario. En el centro se encu
 
 Player Characters
 
-### Nombre e Imagen de Concepto
+### Nombre
 **Spooky (El Fantasma)**
 
 * **Motivación:** Reclamar su territorio expulsando al limpiador y transformando la pulcra mansión y el vecindario en un entorno completamente inhabitable y sucio.
@@ -211,9 +211,8 @@ Player Characters
 * **Daño:** No aplica daño a enemigos; suma porcentaje a la variable global `Suciedad_Zona`.
 
 ---
-Enemigos
+Enemigo
 
-### Arte Conceptual
 **El Limpiador (Conserje)**
 * **Descripción:** Enemigo equipado con aspiradora y linterna, encargado de patrullar y remover el ectoplasma.
 
