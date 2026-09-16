@@ -48,7 +48,13 @@ Gameplay
 	-Control de Área: El objetivo principal es maximizar la cobertura del mapa llenando la mayor cantidad de "tiles" posibles. El éxito requiere identificar qué zonas del mapa están desprotegidas por la ruta del conserje para ensuciarlas eficientemente.
 	-Sigilo Evasivo: La interacción con el enemigo es estrictamente defensiva y basada en el posicionamiento espacial. Entrar en el cono de luz de la linterna castiga al jugador con un aturdimiento de 3 segundos, penalizando drásticamente el tiempo y dándole ventaja al limpiador para aspirar el ectoplasma cercano.
 	-Gestión de Recursos: El jugador no puede manchar infinitamente. Debe trazar rutas eficientes que le permitan vaciar su tanque de 100 unidades y regresar al Portal Espiritual (su única zona segura y punto de recarga) minimizando el tiempo de traslado y maximizando el área cubierta por viaje.
+	
+Justificación de Diseño
 
+	-Género y Mecánicas : Se eligió el formato con perspectiva superior porque facilita un bucle de juego rápido e intuitivo, ideal para partidas cortas de 2 minutos. Esta perspectiva permite al jugador tener una lectura clara del terreno limpio frente al sucio (vital para la condición de victoria) y planificar rutas de evasión al observar el patrón del limpiador desde un punto ventajoso.
+	-Temática y Narrativa: La rivalidad entre un fantasma desordenado y un conserje  justifica de manera natural la mecánica de control de territorio. Además, el estilo visual de pixel art con contrastes de iluminación permite que el ectoplasma verde fluorescente resalte sobre los escenarios cotidianos, otorgando una gratificación visual inmediata al jugador. Esta temática "apta para todo público" asegura un mayor alcance demográfico.
+	-Plataforma (PC / Web): Se seleccionó PC (con posible exportación a Web) ya que los controles WASD + Barra Espaciadora son un estándar altamente intuitivo para los jugadores de teclado. Además, el motor Godot 4 ofrece una excelente optimización para exportar juegos 2D a navegadores (HTML5), lo que facilitará la distribución, el testeo y la accesibilidad del proyecto sin requerir hardware de gama alta.
+	
 Requerimientos Técnicos.
 
 	¿Qué herramientas usará?
@@ -246,3 +252,8 @@ Identificación de Influencias y Referencias
   * **Luigi's Mansion:** Estética fantasmal, uso de la linterna y mecánica de aspirado.
   * **Pac-Man / Alien Swarm:** Vista top-down 2D y navegación en laberintos/escenarios esquivando patrullas.
   * **Splatoon (a menor escala):** La mecánica central de dominar el territorio cubriendo la superficie con un fluido de color brillante.
+
+Valor de Sloppy Spectre
+
+	Lo que hace único a Sloppy Spectre frente a sus influencias es la inversión del clásico estándar de la cacería de fantasmas. A diferencia de juegos como Luigi's Mansion o Pac-Man, donde el objetivo del jugador es limpiar el mapa o eliminar la amenaza paranormal, aquí el jugador es la amenaza que debe sabotear el orden establecido.
+	El proyecto destaca por fusionar la satisfacción de la gestión territorial con la tensión de evadir enemigos invencibles. Al eliminar por completo las mecánicas de combate directo y las barras de vida, la experiencia destila la adrenalina pura de la evasión y la eficiencia de movimiento, condensando un alto nivel de competitividad personal en un ciclo de juego rápido.
