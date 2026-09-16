@@ -42,16 +42,55 @@ Gameplay
 
 Requerimientos Técnicos.
 
-	¿Qué herramientas usará? Tipo de cámara, jefes.  
-	¿Lo implementará el programador? ¿Diseñador? ¿Hard coded? ¿Scripted?  
-	¿Qué diseño de herramientas usará el juego? (Herramientas de creación de niveles, scripting system).
-
+	¿Qué herramientas usará?
+	-Cámara ortográfica 2D en vista superior (Top-Down). La cámara estará fija abarcando la totalidad de la habitación, o seguirá al jugador (Camera2D como hijo del nodo del jugador) en niveles que excedan el tamaño 	de 	la pantalla.
+	-Desarrollado en Godot Engine utilizando GDScript como lenguaje principal, debido a su eficiencia para juegos 2D y manejo de nodos.
+	
+	Implementación de Mecánicas:
+	IA del Limpiador: Implementado por el programador mediante NavigationAgent2D para pathfinding, esquivando paredes para alcanzar manchas de ectoplasma o patrullar. Sus rutas y comportamientos no serán "hard coded", 	sino controlados por un sistema de Máquina de Estados (State Machine: Patrullando, Aspirando, Persiguiendo luz).
+	Sistema de manchas (Ectoplasma):Implementado meediante pintado en un TileMap para calcular el porcentaje de área cubierta (% de suciedad).
+	
+	¿Qué diseño de herramientas usará el juego?
+	Los escenarios se construirán utilizando el sistema integrado de TileMaps de Godot. No se crearán herramientas externas complejas, se dependerá del editor de nodos y variables exportadas para ajustar tiempos y 		velocidad de los conserjes por nivel.
+	
 Mundo del juego.  
 	  
-	Descripción del mundo en el que ocurre el juego.  
-	Descripción general de los niveles.  
-Descripción de cómo se presentan los niveles al jugador.  
+	El juego se desarrolla en un vecindario suburbano cotidiano, aparentemente tranquilo y pulcro. El contraste visual es el pilar del mundo: los entornos comienzan siendo impecables, ordenados y con colores cálidos y realistas, pero a medida que el jugador interactúa con ellos, se van transformando en escenarios caóticos, teñidos de ectoplasma y manchas fantasmales.
+	
+	Descripción general de los niveles
+
+    Nivel 1: El Interior de la Casa :
+        Habitaciones interconectadas (sala, cocina, habitaciones).
+        Gran densidad de objetos cotidianos (alfombras impecables, floreros, refrigeradores, cortinas).
+        Rutas estrechas que facilitan emboscadas y cobertura en rincones o atravesando muebles.
+
+    Nivel 2: El Patio Exterior y Jardín:
+        Mezcla de zonas de jardín cuidado, piscinas/fuentes, cobertizos, tendederos y cercas.
+        Mayor amplitud para desplazarse, con obstáculos como podadoras y mangueras.
+        Superficies naturales (césped podado, tierra, flores de concurso) listas para ser cubiertas de fango espectral.
+
+    Nivel 3: La Calle de la Vecindad:
+        Vía pública, aceras, autos estacionados, fachadas de vecinos, árboles urbanos y postes de luz.
+        Gran escala donde el objetivo de cubrir el porcentaje de superficie requiere mayor esfuerzo por el tamaño aumentado.
+		
+Descripción de cómo se presentan los niveles al jugador.
+	
+	Flujo de presentación de niveles
+	Los niveles se introducen de manera progresiva y narrativa, reflejando la expansión de la plaga fantasmal:
+	
+    Medidor de cobertura / Meta visible:
+        La interfaz muestra de forma clara el porcentaje de suciedad necesario para que el fantasma reclame esa zona y desbloquee la salida/siguiente área.
+
+    Puntos de transición lógicos:
+        El paso de un nivel al siguiente ocurre de forma orgánica dentro del mundo:
+            Tras arruinar la casa, el fantasma atraviesa la puerta trasera o ventana hacia el patio.
+            Tras arruinar el patio, derriba la reja o se cuela por el portón hacia la calle de la vecindad.
+
 	¿Cómo navega el jugador entre niveles?
+	En el Modo Historia / Progresión principal:
+	La navegación es lineal y continua. Al alcanzar el porcentaje de suciedad requerido, se reproduce una pequeña animación de victoria y el jugador se traslada inmediatamente a la siguiente zona.
+	En el Menú de Selección de Niveles:
+	Se representa mediante un plano/mapa ilustrado de la propiedad y el vecindario. Los niveles ya conquistados aparecen marcados con manchas de ectoplasma, mostrando la puntuación máxima obtenida ( y permitiendo 		rejugarlos.
 
 Experiencia de juego.
 * Descripción de la experiencia:
@@ -170,6 +209,15 @@ Música y efectos especiales.
 	Música por nivel y pantallas (inicio, pausa, opciones, créditos)  
 	Tono y sentimientos de la música.
 
+Perfil del jugador objetivo
+
+	Demografía:
+	Jugadores de todas las edades, con un enfoque principal en jóvenes (10-24 años) debido a la estética cartoon y pixel art. Plataforma objetivo principal: PC (teclado/ratón) con posible port a Web (navegadores). 
+	Psicografía e Intereses:
+	Jugadores que disfrutan de juegos casuales y arcades de ritmo rápido. Aquellos que buscan experiencias mecánicas sencillas de entender, con un bucle de jugabilidad adictivo (Siguiendo un pensamiento de "un nivel 	más"). Disfrutan del  estilo dibujos animados y estéticas de Halloween o spooky. 
+	Hábitos de juego:
+	Jugadores que prefieren sesiones cortas e intensas (partidas de 2 minutos). Tolerantes a la repetición y que buscan superar sus propios récords de tiempo o perfeccionar su estrategia de movimiento.
+	
 Identificación de influencias y referencias relevantes.  
 	Juegos similares  
 	Elementos 
