@@ -248,7 +248,3 @@ Identificación de Influencias y Referencias
   * **Luigi's Mansion:** Estética fantasmal, uso de la linterna y mecánica de aspirado.
   * **Pac-Man / Alien Swarm:** Vista top-down 2D y navegación en laberintos/escenarios esquivando patrullas.
   * **Splatoon (a menor escala):** La mecánica central de dominar el territorio cubriendo la superficie con un fluido de color brillante.
-	Juegos similares  
-	Elementos
-
-¿Qué hace único a 
