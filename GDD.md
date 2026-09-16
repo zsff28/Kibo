@@ -105,16 +105,50 @@ Progresión del juego
 
 Sistema de niveles.
 
-Lista detallada de niveles.   
-Descripción de cada nivel  
-Objetivo.  
-Recompensa del nivel.  
-Descripción del gameplay del nivel.  
-Enemigos encontrados en el nivel  
-Arte conceptual.  
-Música.  
-Hub del nivel  
-Mecánicas específicas del nivel (tiempo, daño, qué afecta al jugador?
+El juego cuenta con 3 niveles. El objetivo por nivel es el mismo: cubrir más del 80% del mapa de suciedad. 
+
+Sistema base:
+* Movimiento 2D mediante las fechas del teclado.
+* Acción (ensuciar) con barra espaciadora.
+* Sistema de tanque ectoplasma: Número de 0-100.
+* Variable: Suciedad_Zona. Variable numérica.
+* Condición de Victoria por nivel: Variable >= 240
+
+Nivel 1. Introducción / Tutorial
+
+* Descripción: Una habitación dentro de una casa. El nivel no tiene obstáculos para que el jugador se familiarice con las mecánicas del juego. En el centro se encuentra el portal para recargar el tanque.
+* Objetivo: Alcanzar al menos el 80% de suciedad en el suelo antes de que finalice el tiempo.
+* Recompensa del nivel: Desbloqueo nivel 2.
+* Descripción del gameplay del nivel: El jugador mueve al personaje por todo el escenario mediante las flechas del teclado, cubriéndolo con la tecla espacio hasta que se acaban las 100 unidades. Si esto ocurre, se debe recargar el tanque en el centro del escenario (en un portal) para continuar.
+* Enemigos encontrados: 1 Limpiador Novato (se desplaza a velocidad lenta).
+* HUD del nivel. Igual en todos los niveles. En la esquina superior derecha se muestra el tiempo restante. En la parte superior de la pantalla, en el centro, el porcentaje del escenario cubierto. El personaje principal tiene un tanque que muestra la cantidad de unidades restantes.
+* Mecánicas específicas: No hay mecánicas específicas por nivel. Las mecánicas son las mismas en los 3 niveles.
+** Tiempo: 120 segundos (02:00 minutos).
+** Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
+
+Nivel 2. Intermedio.
+
+* Descripción: Un jardín trasero de una casa. En el centro se encuentra el portal para recargar el tanque. El nivel no cuenta con obstáculos fuera del enemigo principal: el limpiador.
+* Objetivo: Alcanzar al menos el 80% de suciedad en el suelo antes de que finalice el tiempo.
+* Recompensa del nivel: Desbloqueo nivel 3.
+* Descripción del gameplay del nivel: El jugador mueve al personaje por todo el escenario mediante las flechas del teclado, cubriéndolo con la tecla espacio hasta que se acaban las 100 unidades. Si esto ocurre, se debe recargar el tanque en el centro del escenario (en un portal) para continuar.
+* Enemigos encontrados: 1 Limpiador (se desplaza a velocidad moderada).
+* HUD del nivel. Igual en todos los niveles. En la esquina superior derecha se muestra el tiempo restante. En la parte superior de la pantalla, en el centro, el porcentaje del escenario cubierto. El personaje principal tiene un tanque que muestra la cantidad de unidades restantes.
+* Mecánicas específicas:  No hay mecánicas específicas por nivel. Las mecánicas son las mismas en los 3 niveles.
+** Tiempo: 120 segundos (02:00 minutos).
+** Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
+
+Nivel 3.
+
+* Descripción: Nivel final. El vecindario. En el centro se encuentra el portal para recargar el tanque. El nivel no cuenta con obstáculos fuera del enemigo principal: el limpiador.
+* Objetivo: Alcanzar al menos el 80% de suciedad en el suelo antes de que finalice el tiempo.
+* Recompensa del nivel: Pantalla de victoria. Final "bueno".
+* Descripción del gameplay del nivel: El jugador mueve al personaje por todo el escenario mediante las flechas del teclado, cubriéndolo con la tecla espacio hasta que se acaban las 100 unidades. Si esto ocurre, se debe recargar el tanque en el centro del escenario (en un portal) para continuar.
+* Enemigos encontrados: 1 Limpiador experto (se desplaza a velocidad rápida).
+* HUD del nivel. Igual en todos los niveles. En la esquina superior derecha se muestra el tiempo restante. En la parte superior de la pantalla, en el centro, el porcentaje del escenario cubierto. El personaje principal tiene un tanque que muestra la cantidad de unidades restantes.
+* Mecánicas específicas: No hay mecánicas específicas por nivel. Las mecánicas son las mismas en los 3 niveles.
+** Tiempo: 120 segundos (02:00 minutos).
+** Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
 
 Player Characters  
 	  
