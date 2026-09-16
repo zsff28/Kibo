@@ -1,6 +1,7 @@
 Portada.
 
 Imagen de portada del juego.
+https://github.com/zsff28/Kibo/blob/main/Arte_Conceptual/Portada%20GDD.jpeg 
 
 Título del juego:
 Sloppy Spectre
@@ -19,10 +20,9 @@ Fecha de publicación:
 Número de versión.
 Version 1
 
-Game Goals
 
 Historia del juego
-Spooky es un pequeño y travieso fantasma que habita una mansión, donde su vida de vagar y desordenar se ve amenazada por el limpiador y su implacable limpieza, empeñado en desinfectar cada rincón con su aspiradora y linterna. Para reclamar tu territorio, decides expulsarlo manchando todo con ectoplasma hasta que el lugar sea completamente inhabitable y sucio.
+Spooky es un pequeño y travieso fantasma que habita en una vecindad, donde su vida de vagar y desordenar se ve amenazada por el limpiador y su implacable limpieza, empeñado en desinfectar cada rincón con su aspiradora y linterna. Para reclamar tu territorio, decides expulsarlo manchando todo con ectoplasma hasta que el lugar sea completamente inhabitable y sucio.
 	
 	¿Cómo el jugador comienza el juego? 
 	El jugador inicia en el centro de la escena, emergiendo de un portal espiritual morado/azul tras un conteo de 3 segundos que al terminar aparecerá la frase "¡A ensuciar!".
@@ -31,14 +31,24 @@ Spooky es un pequeño y travieso fantasma que habita una mansión, donde su vida
 	Levitando libremente en 4 direcciones en vista superior 2D, atravesando todo el escenario sin colisiones de terreno y esquivando únicamente los conos de luz de la linterna del limpiador.	
 	
 	¿Cómo termina?
-	Victoria final: Tras superar el nivel del vecindario al completar más del 80% de suciedad, spooky celebra y el vecindario queda cubierto de ectoplasma verde fluorescente.
+	Victoria final: Tras superar el nivel del vecindario al completar más del 80% de suciedad, spooky celebra y la zona queda cubierto de ectoplasma verde fluorescente.
 	Derrota: Si el tiempo expira sin alcanzar al menos el 80% o el escenario llega al 0% de suciedad, los limpiadores sanitizan el portal y Spooky queda desvanecido por una aspiradora.
 
 Gameplay
 
-	Vista previa. Movimientos específicos que el jugador hará.  
-	Foto del control con los movimientos que generarán las teclas.  
+	Bucle central
+	El núcleo del juego se centra en el control de territorio bajo una constante presión de tiempo. El jugador debe alternar rápidamente entre un comportamiento ofensivo (rociar ectoplasma en zonas limpias) y uno de gestión y evasión (huir del limpiador y regresar al portal central a recargar munición). Es una dinámica de "gato y ratón" donde el terreno es el tablero de puntuación.
+	https://github.com/zsff28/Kibo/blob/main/Arte_Conceptual/HUD%20por%20nivel.jpeg
+	
+	Controles
+	-W, A, S, D o Flechas Direccionales: Desplazamiento del fantasma en el eje X e Y (arriba, izquierda, abajo, derecha).
+	-Barra Espaciadora (Mantener): Rociar ectoplasma sobre el suelo de forma continua. Esta acción drena gradualmente el tanque de ectoplasma del jugador.
+	https://github.com/zsff28/Kibo/blob/main/Arte_Conceptual/Controles.jpeg
+	
 	Descripción de tipos de gameplay.
+	-Control de Área: El objetivo principal es maximizar la cobertura del mapa llenando la mayor cantidad de "tiles" posibles. El éxito requiere identificar qué zonas del mapa están desprotegidas por la ruta del conserje para ensuciarlas eficientemente.
+	-Sigilo Evasivo: La interacción con el enemigo es estrictamente defensiva y basada en el posicionamiento espacial. Entrar en el cono de luz de la linterna castiga al jugador con un aturdimiento de 3 segundos, penalizando drásticamente el tiempo y dándole ventaja al limpiador para aspirar el ectoplasma cercano.
+	-Gestión de Recursos: El jugador no puede manchar infinitamente. Debe trazar rutas eficientes que le permitan vaciar su tanque de 100 unidades y regresar al Portal Espiritual (su única zona segura y punto de recarga) minimizando el tiempo de traslado y maximizando el área cubierta por viaje.
 
 Requerimientos Técnicos.
 
@@ -229,10 +239,12 @@ Perfil del jugador objetivo
 	Demografía:
 	Jugadores de todas las edades, con un enfoque principal en jóvenes (10-24 años) debido a la estética cartoon y pixel art. Plataforma objetivo principal: PC (teclado/ratón) con posible port a Web (navegadores). 
 	Intereses:
-	Jugadores que disfrutan de juegos casuales y arcades de ritmo rápido. Aquellos que buscan experiencias mecánicas sencillas de entender, con un bucle de jugabilidad adictivo (Siguiendo un pensamiento de "un nivel 	más"). Disfrutan del  estilo dibujos animados y estéticas de Halloween o spooky. 
+	Jugadores que disfrutan de juegos casuales y arcades de ritmo rápido. Aquellos que buscan experiencias mecánicas sencillas de entender, con un bucle de jugabilidad adictivo (Siguiendo un pensamiento de "un nivel más"). Disfrutan del  estilo dibujos animados y estéticas de Halloween o spooky. 
 	Hábitos de juego:
 	Jugadores que prefieren sesiones cortas e intensas (partidas de 2 minutos). Tolerantes a la repetición y que buscan superar sus propios récords de tiempo o perfeccionar su estrategia de movimiento.
 	
 Identificación de influencias y referencias relevantes.  
 	Juegos similares  
-	Elementos 
+	Elementos
+
+¿Qué hace único a 
