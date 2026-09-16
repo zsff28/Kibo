@@ -197,7 +197,7 @@ Nivel 3. Difícil.Descripción: Nivel final. El vecindario. En el centro se encu
   * Tiempo: 120 segundos (02:00 minutos).
   * Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
 
-## 9. Player Characters
+Player Characters
 
 ### Nombre e Imagen de Concepto
 **Spooky (El Fantasma)**
@@ -212,8 +212,7 @@ Nivel 3. Difícil.Descripción: Nivel final. El vecindario. En el centro se encu
 * **Daño:** No aplica daño a enemigos; suma porcentaje a la variable global `Suciedad_Zona`.
 
 ---
-
-## 10. Enemigos
+Enemigos
 
 ### Arte Conceptual
 **El Limpiador (Conserje)**
@@ -243,7 +242,12 @@ Perfil del jugador objetivo
 	Hábitos de juego:
 	Jugadores que prefieren sesiones cortas e intensas (partidas de 2 minutos). Tolerantes a la repetición y que buscan superar sus propios récords de tiempo o perfeccionar su estrategia de movimiento.
 	
-Identificación de influencias y referencias relevantes.  
+Identificación de Influencias y Referencias
+
+* **Juegos Similares y Elementos Tomados:**
+  * **Luigi's Mansion:** Estética fantasmal, uso de la linterna y mecánica de aspirado.
+  * **Pac-Man / Alien Swarm:** Vista top-down 2D y navegación en laberintos/escenarios esquivando patrullas.
+  * **Splatoon (a menor escala):** La mecánica central de dominar el territorio cubriendo la superficie con un fluido de color brillante.
 	Juegos similares  
 	Elementos
 
