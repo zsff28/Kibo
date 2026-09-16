@@ -123,8 +123,8 @@ Nivel 1. Introducción / Tutorial
 * Enemigos encontrados: 1 Limpiador Novato (se desplaza a velocidad lenta).
 * HUD del nivel. Igual en todos los niveles. En la esquina superior derecha se muestra el tiempo restante. En la parte superior de la pantalla, en el centro, el porcentaje del escenario cubierto. El personaje principal tiene un tanque que muestra la cantidad de unidades restantes.
 * Mecánicas específicas: No hay mecánicas específicas por nivel. Las mecánicas son las mismas en los 3 niveles.
-** Tiempo: 120 segundos (02:00 minutos).
-** Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
+  * Tiempo: 120 segundos (02:00 minutos).
+  * Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
 
 Nivel 2. Intermedio.
 
@@ -135,8 +135,8 @@ Nivel 2. Intermedio.
 * Enemigos encontrados: 1 Limpiador (se desplaza a velocidad moderada).
 * HUD del nivel. Igual en todos los niveles. En la esquina superior derecha se muestra el tiempo restante. En la parte superior de la pantalla, en el centro, el porcentaje del escenario cubierto. El personaje principal tiene un tanque que muestra la cantidad de unidades restantes.
 * Mecánicas específicas:  No hay mecánicas específicas por nivel. Las mecánicas son las mismas en los 3 niveles.
-** Tiempo: 120 segundos (02:00 minutos).
-** Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
+  * Tiempo: 120 segundos (02:00 minutos).
+  * Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
 
 Nivel 3.
 
@@ -147,8 +147,8 @@ Nivel 3.
 * Enemigos encontrados: 1 Limpiador experto (se desplaza a velocidad rápida).
 * HUD del nivel. Igual en todos los niveles. En la esquina superior derecha se muestra el tiempo restante. En la parte superior de la pantalla, en el centro, el porcentaje del escenario cubierto. El personaje principal tiene un tanque que muestra la cantidad de unidades restantes.
 * Mecánicas específicas: No hay mecánicas específicas por nivel. Las mecánicas son las mismas en los 3 niveles.
-** Tiempo: 120 segundos (02:00 minutos).
-** Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
+  * Tiempo: 120 segundos (02:00 minutos).
+  * Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
 
 Player Characters  
 	  
