@@ -1,4 +1,3 @@
-Portada.
 
 Imagen de portada del juego.
 https://github.com/zsff28/Kibo/blob/main/Arte_Conceptual/Portada%20GDD.jpeg 
