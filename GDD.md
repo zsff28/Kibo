@@ -177,9 +177,7 @@ Nivel 2. Intermedio.
   * Tiempo: 120 segundos (02:00 minutos).
   * Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
 
-Nivel 3. Difícil.
-
-* Descripción: Nivel final. El vecindario. En el centro se encuentra el portal para recargar el tanque. El nivel no cuenta con obstáculos fuera del enemigo principal: el limpiador.
+Nivel 3. Difícil.Descripción: Nivel final. El vecindario. En el centro se encuentra el portal para recargar el tanque. El nivel no cuenta con obstáculos fuera del enemigo principal: el limpiador.
 * Objetivo: Alcanzar al menos el 80% de suciedad en el suelo antes de que finalice el tiempo.
 * Recompensa del nivel: Pantalla de victoria. Final "bueno".
 * Descripción del gameplay del nivel: El jugador mueve al personaje por todo el escenario mediante las flechas del teclado, cubriéndolo con la tecla espacio hasta que se acaban las 100 unidades. Si esto ocurre, se debe recargar el tanque en el centro del escenario (en un portal) para continuar.
@@ -213,7 +211,7 @@ Perfil del jugador objetivo
 
 	Demografía:
 	Jugadores de todas las edades, con un enfoque principal en jóvenes (10-24 años) debido a la estética cartoon y pixel art. Plataforma objetivo principal: PC (teclado/ratón) con posible port a Web (navegadores). 
-	Psicografía e Intereses:
+	Intereses:
 	Jugadores que disfrutan de juegos casuales y arcades de ritmo rápido. Aquellos que buscan experiencias mecánicas sencillas de entender, con un bucle de jugabilidad adictivo (Siguiendo un pensamiento de "un nivel 	más"). Disfrutan del  estilo dibujos animados y estéticas de Halloween o spooky. 
 	Hábitos de juego:
 	Jugadores que prefieren sesiones cortas e intensas (partidas de 2 minutos). Tolerantes a la repetición y que buscan superar sus propios récords de tiempo o perfeccionar su estrategia de movimiento.
