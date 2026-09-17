@@ -31,7 +31,7 @@ Spooky es un pequeño y travieso fantasma que habita en una vecindad, donde su v
 	
 	¿Cómo termina?
 	Victoria final: Tras superar el nivel del vecindario al completar más del 80% de suciedad, spooky celebra y la zona queda cubierto de ectoplasma verde fluorescente.
-	Derrota: Si el tiempo expira sin alcanzar al menos el 80% o el escenario llega al 0% de suciedad, los limpiadores sanitizan el portal y Spooky queda desvanecido por una aspiradora.
+	Derrota: Si el tiempo expira sin alcanzar al menos el 80% o el escenario llega al 0% de suciedad, el limpiador sanitiza el portal y Spooky queda desvanecido por una aspiradora.
 
 Gameplay
 
@@ -233,9 +233,37 @@ Enemigo
 * **¿Se Incluyen Jefes?:** El Limpiador Experto del Nivel 3 actúa como el enemigo/jefe final del juego debido a su elevada velocidad y eficiencia de limpieza.
 
 Música y efectos especiales.  
-	Lista de música.  
-	Música por nivel y pantallas (inicio, pausa, opciones, créditos)  
-	Tono y sentimientos de la música.
+	Lista de música.
+	El audio utiliza la arquitectura de nodos AudioStreamPlayer y AudioStreamPlayer2D de Godot 4, dividiendo las salidas en dos buses dedicados en el AudioServer: BGM (Música) y SFX (Efectos de sonido), permitiendo un control de volumen independiente desde el menú de opciones.
+	- Track 01: "Sloppy Intro" (Pantalla de Título, Selección de Nivel y Opciones).
+	- Track 02: "Tiptoe in the Dark" (Nivel 1: El Interior de la Casa).
+	- Track 03: "Backyard Mischief" (Nivel 2: El Patio Exterior y Jardín).
+	- Track 04: "Midnight Mayhem" (Nivel 3: La Calle de la Vecindad).
+	- Track 05: "Victory Haunt" (Pantalla de Victoria / Final del Nivel).
+	- Track 06: "Busted & Drained" (Pantalla de Game Over / Derrota).
+
+Música por nivel y pantallas (inicio, pausa, opciones, créditos)
+- Menú Inicio, Opciones y Créditos (Sloppy Intro): Tema relajado y cómico con xilófonos y pizzicato de cuerdas que da la bienvenida al jugador sin saturarlo mientras navega por los menús.
+- Pausa In-Game (Filtro de Nivel): La música del nivel sigue sonando de fondo pero con volumen reducido y un filtro amortiguado para indicar que el juego está detenido.
+- Nivel 1: Interior de la Casa (Tiptoe in the Dark): Ritmo lento y pausado con notas suaves de piano y contrabajo, transmitiendo una sensación de sigilo y travesura ligera mientras el jugador aprende a ensuciar.
+- Nivel 2: El Patio y Jardín (Backyard Mischief): Melodía más alegre y rápida con guitarras rítmicas, aumentando la sensación de prisa y dinamismo al estar en un espacio exterior más amplio.
+- Nivel 3: La Vecindad (Midnight Mayhem): Tema enérgico con batería rápida y sintetizadores. En los últimos 30 segundos de la ronda, la música se acelera un poco más para añadir tensión al cierre.
+- Pantalla de Victoria (Victory Haunt): Corta fanfarria alegre y burlona de pocos segundos que suena junto a una risa caricaturesca de Spooky al ganar.
+- Pantalla de Game Over (Busted & Drained): Sonido cómico descendente de trombón (wah-wah) que termina con el ruido de una aspiradora apagándose al perder la partida.
+
+Tono y sentimientos de la música. 
+El paisaje sonoro está diseñado bajo el género Spooky-Cartoon, fuertemente influenciado por bandas sonoras de horror cómico (Luigi’s Mansion, Beetlejuice y animaciones clásicas de Warner Bros).
+- Sensación de un juego travieso: Tonos alegres y acordes menores con disonancias juguetonas que refuerzan que Spooky no es un monstruo letal, sino un fantasma bromista saboteando una jornada de limpieza.
+- Tensión sin estrés hostil: La música acompaña la presión del reloj sin recurrir a ritmos agresivos de combate, alineándose con un bucle arcade accesible de 2 minutos.
+
+Efectos de Sonido (SFX)
+Implementados con disparadores directos en el código (AudioStreamPlayer2D.play()):
+- Rociar Ectoplasma (ESPACIO): Sonido de salpicadura húmeda continua (splat).
+- Recarga en el Portal: Zumbido místico que sube de tono hasta llenar el tanque.
+- Linterna / Aturdimiento: Clic de encendido rápido seguido de un sonido cómico de mareo durante los 3 segundos.
+- Aspirado del Limpiador: Ruido de aspiradora que suena más fuerte conforme se acerca a Spooky.
+- Alerta de Tiempo Crítico: Sonido de reloj acelerado al llegar a los últimos 30 segundos.
+
 
 Perfil del jugador objetivo
 
@@ -257,3 +285,36 @@ Valor de Sloppy Spectre
 
 	Lo que hace único a Sloppy Spectre frente a sus influencias es la inversión del clásico estándar de la cacería de fantasmas. A diferencia de juegos como Luigi's Mansion o Pac-Man, donde el objetivo del jugador es limpiar el mapa o eliminar la amenaza paranormal, aquí el jugador es la amenaza que debe sabotear el orden establecido.
 	El proyecto destaca por fusionar la satisfacción de la gestión territorial con la tensión de evadir enemigos invencibles. Al eliminar por completo las mecánicas de combate directo y las barras de vida, la experiencia destila la adrenalina pura de la evasión y la eficiencia de movimiento, condensando un alto nivel de competitividad personal en un ciclo de juego rápido.
+
+Riesgos, Trade-offs y Alcance del MVP
+Alcance Controlado y Delimitación del MVP
+Siguiendo lo mencionado en Level Up! de Scott Rogers, el MVP busca validar el bucle central de interacción sin saturar al equipo con desarrollo prescindible:
+
+- Dentro del MVP (Scope In):
+Movimiento libre en 4 direcciones sin colisiones para Spooky.
+Rociado de ectoplasma en cono que pinta el TileMap y suma suciedad.
+Tanque de 100 unidades y recarga de 1.5 segundos en el portal central.
+1 Limpiador con IA que patrulla, aspira manchas y aturde con su linterna.
+Condiciones de victoria (80% o más de suciedad) y derrota (0% o acabarse los 120 segundos/2 minutos).
+3 niveles funcionales sobre la misma base, variando mapa y velocidad del enemigo.
+
+- Fuera del MVP (Scope Out):
+Power-ups como el ectoplasma súper viscoso.
+Cinemáticas o diálogos entre niveles.
+
+Riesgos y Soluciones
+
+- Riesgo: Caída de FPS al calcular la suciedad.
+Impacto: Alto. Revisar todo el mapa cada fotograma causaría lag.
+Solución: Usar un contador simple que solo sume o reste 1 cada vez que una casilla se ensucie o se limpie, en lugar de escanear el escenario completo.
+- Riesgo: El limpiador se queda atorado.
+Impacto: Medio. Si el enemigo se traba en una esquina, se pierde el reto.
+Solución: Simplificar las colisiones del mapa y programar un reinicio: si no se mueve en 1.5 segundos, se le asigna un nuevo punto al azar.
+- Riesgo: Frustración por el aturdimiento de 3 segundos.
+Impacto: Medio. Quedar inmóvil tanto tiempo puede sentirse injusto en rondas de 2 minutos.
+Solución: Agregar animación y sonido cómico de mareo, además de dar 1.5 segundos de inmunidad al recuperarse para evitar aturdimientos seguidos.
+
+Trade-offs de Diseño
+- Atravesar paredes vs. Laberinto: No tener colisiones con muebles u objetos facilita el control del fantasma y refuerza su temática, a cambio, la evasión depende exclusivamente de esquivar la luz de la linterna del limpiador.
+- Escalar velocidad vs. Nuevos patrones de IA: Mantener un solo limpiador variando únicamente su velocidad entre niveles permite tener un sistema estable y funcional para la entrega, sin arriesgar la lógica de navegación.
+
