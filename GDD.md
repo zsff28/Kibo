@@ -155,7 +155,12 @@ Mecánicas del juego.
 
 Progresión del juego  
 	  
-	¿Cómo interactuan la historia y el gameplay?
+¿Cómo interactuan la historia y el gameplay?
+La historia se enfoca en Spooky, un fantasma travieso que quiere desordenar, y el limpiador, quien busca lo contrario: dejar el lugar completamente limpio. Esta rivalidad es la base para todo el gameplay: Spooky ensucia y escapa del limpiador mientras el limpiador ordena y aspira todo lo que Spooky deja. 
+
+La progresión de niveles también es coherente con la historia. Primero, Spooky ensucia toda la casa, luego el jardín y, finalmente, el vecindario, demostrando cómo el fantasma va manchando, ensuciando y apoderándose de todo su entorno. 
+
+El juego tiene un gameplay enfocado a la evasión y al control del área, lo que es complementado con la historia de Spooky tratando de evitar al limpiador (quien, si lo atrapa, inmoviliza al jugador 3 segundos) y ensuciando todo (una de las mecánicas más importantes: con la barra espaciadora llenar el escenario de ectoplasma).
 
 Sistema de niveles.
 
