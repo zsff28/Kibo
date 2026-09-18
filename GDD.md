@@ -128,7 +128,7 @@ Experiencia de juego.
   * NO: `Pantalla de Game Over` ➔ `Reintentar / Menú`
 
 * Descripción del entorno: 
-  Gráficos estilizados *Cartoon*, iluminación tenue con contrastes fuertes generados por el cono de luz del conserje y el brillo fluorescente del ectoplasma verde.
+  Gráficos estilizados *Pixel Art*, iluminación tenue con contrastes fuertes generados por el cono de luz del conserje y el brillo fluorescente del ectoplasma verde.
   
 Mecánicas del juego.
 * Sistema HUD:  
