@@ -10,98 +10,97 @@ Versión 1
 
 Nombre de los integrantes del equipo.
 Sofia Fernanda Flores Amador
-Jesús Emiliano Gutierrez Luna
+Jesús Emiliano Gutiérrez Luna
 Ángel Federico López Ruiz
-Karol Citlaly Ramirez Martinez
+Karol Citlaly Ramírez Martínez
 
 Fecha de publicación:
-15 de Septiembre: 
+18 de Septiembre: 
 Número de versión.
 Version 1
-
 
 Historia del juego
 Spooky es un pequeño y travieso fantasma que habita en una vecindad, donde su vida de vagar y desordenar se ve amenazada por el limpiador y su implacable limpieza, empeñado en desinfectar cada rincón con su aspiradora y linterna. Para reclamar tu territorio, decides expulsarlo manchando todo con ectoplasma hasta que el lugar sea completamente inhabitable y sucio.
 	
-	¿Cómo el jugador comienza el juego? 
-	El jugador inicia en el centro de la escena, emergiendo de un portal espiritual morado/azul tras un conteo de 3 segundos que al terminar aparecerá la frase "¡A ensuciar!".
+¿Cómo el jugador comienza el juego? 
+El jugador inicia en el centro de la escena, emergiendo de un portal espiritual morado/azul tras un conteo de 3 segundos que al terminar aparecerá la frase "¡A ensuciar!".
 	
-	¿Cómo el jugador se mueve de un lugar a otro? 
-	Levitando libremente en 4 direcciones en vista superior 2D, atravesando todo el escenario sin colisiones de terreno y esquivando únicamente los conos de luz de la linterna del limpiador.	
+¿Cómo el jugador se mueve de un lugar a otro? 
+Levitando libremente en 4 direcciones en vista superior 2D, atravesando todo el escenario sin colisiones de terreno y esquivando únicamente los conos de luz de la linterna del limpiador.	
 	
-	¿Cómo termina?
+¿Cómo termina?
 	Victoria final: Tras superar el nivel del vecindario al completar más del 80% de suciedad, spooky celebra y la zona queda cubierto de ectoplasma verde fluorescente.
 	Derrota: Si el tiempo expira sin alcanzar al menos el 80% o el escenario llega al 0% de suciedad, el limpiador sanitiza el portal y Spooky queda desvanecido por una aspiradora.
 
 Gameplay
 
-	Bucle central
+Bucle central
 	El núcleo del juego se centra en el control de territorio bajo una constante presión de tiempo. El jugador debe alternar rápidamente entre un comportamiento ofensivo (rociar ectoplasma en zonas limpias) y uno de gestión y evasión (huir del limpiador y regresar al portal central a recargar munición). Es una dinámica de "gato y ratón" donde el terreno es el tablero de puntuación.
 	https://github.com/zsff28/Kibo/blob/main/Arte_Conceptual/HUD%20por%20nivel.jpeg
 	
-	Controles
+Controles
 	-W, A, S, D o Flechas Direccionales: Desplazamiento del fantasma en el eje X e Y (arriba, izquierda, abajo, derecha).
 	-Barra Espaciadora (Mantener): Rociar ectoplasma sobre el suelo de forma continua. Esta acción drena gradualmente el tanque de ectoplasma del jugador.
 	https://github.com/zsff28/Kibo/blob/main/Arte_Conceptual/Controles.jpeg
 	
-	Descripción de tipos de gameplay.
+Descripción de tipos de gameplay.
 	-Control de Área: El objetivo principal es maximizar la cobertura del mapa llenando la mayor cantidad de "tiles" posibles. El éxito requiere identificar qué zonas del mapa están desprotegidas por la ruta del conserje para ensuciarlas eficientemente.
 	-Sigilo Evasivo: La interacción con el enemigo es estrictamente defensiva y basada en el posicionamiento espacial. Entrar en el cono de luz de la linterna castiga al jugador con un aturdimiento de 3 segundos, penalizando drásticamente el tiempo y dándole ventaja al limpiador para aspirar el ectoplasma cercano.
 	-Gestión de Recursos: El jugador no puede manchar infinitamente. Debe trazar rutas eficientes que le permitan vaciar su tanque de 100 unidades y regresar al Portal Espiritual (su única zona segura y punto de recarga) minimizando el tiempo de traslado y maximizando el área cubierta por viaje.
 	
 Justificación de Diseño
 
-	-Género y Mecánicas : Se eligió el formato con perspectiva superior porque facilita un bucle de juego rápido e intuitivo, ideal para partidas cortas de 2 minutos. Esta perspectiva permite al jugador tener una lectura clara del terreno limpio frente al sucio (vital para la condición de victoria) y planificar rutas de evasión al observar el patrón del limpiador desde un punto ventajoso.
+-Género y Mecánicas : Se eligió el formato con perspectiva superior porque facilita un bucle de juego rápido e intuitivo, ideal para partidas cortas de 2 minutos. Esta perspectiva permite al jugador tener una lectura clara del terreno limpio frente al sucio (vital para la condición de victoria) y planificar rutas de evasión al observar el patrón del limpiador desde un punto ventajoso.
 	-Temática y Narrativa: La rivalidad entre un fantasma desordenado y un conserje  justifica de manera natural la mecánica de control de territorio. Además, el estilo visual de pixel art con contrastes de iluminación permite que el ectoplasma verde fluorescente resalte sobre los escenarios cotidianos, otorgando una gratificación visual inmediata al jugador. Esta temática "apta para todo público" asegura un mayor alcance demográfico.
 	-Plataforma (PC / Web): Se seleccionó PC (con posible exportación a Web) ya que los controles WASD + Barra Espaciadora son un estándar altamente intuitivo para los jugadores de teclado. Además, el motor Godot 4 ofrece una excelente optimización para exportar juegos 2D a navegadores (HTML5), lo que facilitará la distribución, el testeo y la accesibilidad del proyecto sin requerir hardware de gama alta.
 	
 Requerimientos Técnicos.
 
-	¿Qué herramientas usará?
+¿Qué herramientas usará?
 	-Cámara ortográfica 2D en vista superior (Top-Down). La cámara estará fija abarcando la totalidad de la habitación, o seguirá al jugador (Camera2D como hijo del nodo del jugador) en niveles que excedan el tamaño 	de 	la pantalla.
 	-Desarrollado en Godot Engine utilizando GDScript como lenguaje principal, debido a su eficiencia para juegos 2D y manejo de nodos.
 	
-	Implementación de Mecánicas:
+Implementación de Mecánicas:
 	IA del Limpiador: Implementado por el programador mediante NavigationAgent2D para pathfinding, esquivando paredes para alcanzar manchas de ectoplasma o patrullar. Sus rutas y comportamientos no serán "hard coded", 	sino controlados por un sistema de Máquina de Estados (State Machine: Patrullando, Aspirando, Persiguiendo luz).
 	Sistema de manchas (Ectoplasma):Implementado meediante pintado en un TileMap para calcular el porcentaje de área cubierta (% de suciedad).
 	
-	¿Qué diseño de herramientas usará el juego?
+¿Qué diseño de herramientas usará el juego?
 	Los escenarios se construirán utilizando el sistema integrado de TileMaps de Godot. No se crearán herramientas externas complejas, se dependerá del editor de nodos y variables exportadas para ajustar tiempos y 		velocidad de los conserjes por nivel.
 	
 Mundo del juego.  
 	  
-	El juego se desarrolla en un vecindario suburbano cotidiano, aparentemente tranquilo y pulcro. El contraste visual es el pilar del mundo: los entornos comienzan siendo impecables, ordenados y con colores cálidos y realistas, pero a medida que el jugador interactúa con ellos, se van transformando en escenarios caóticos, teñidos de ectoplasma y manchas fantasmales.
+El juego se desarrolla en un vecindario suburbano cotidiano, aparentemente tranquilo y pulcro. El contraste visual es el pilar del mundo: los entornos comienzan siendo impecables, ordenados y con colores cálidos y realistas, pero a medida que el jugador interactúa con ellos, se van transformando en escenarios caóticos, teñidos de ectoplasma y manchas fantasmales.
 	
-	Descripción general de los niveles
+Descripción general de los niveles
 
-    Nivel 1: El Interior de la Casa :
+Nivel 1: El Interior de la Casa :
         Habitaciones interconectadas (sala, cocina, habitaciones).
         Gran densidad de objetos cotidianos (alfombras impecables, floreros, refrigeradores, cortinas).
         Rutas estrechas que facilitan emboscadas y cobertura en rincones o atravesando muebles.
 
-    Nivel 2: El Patio Exterior y Jardín:
+Nivel 2: El Patio Exterior y Jardín:
         Mezcla de zonas de jardín cuidado, piscinas/fuentes, cobertizos, tendederos y cercas.
         Mayor amplitud para desplazarse, con obstáculos como podadoras y mangueras.
         Superficies naturales (césped podado, tierra, flores de concurso) listas para ser cubiertas de fango espectral.
 
-    Nivel 3: La Calle de la Vecindad:
+ Nivel 3: La Calle de la Vecindad:
         Vía pública, aceras, autos estacionados, fachadas de vecinos, árboles urbanos y postes de luz.
         Gran escala donde el objetivo de cubrir el porcentaje de superficie requiere mayor esfuerzo por el tamaño aumentado.
 		
 Descripción de cómo se presentan los niveles al jugador.
 	
-	Flujo de presentación de niveles
+Flujo de presentación de niveles
 	Los niveles se introducen de manera progresiva y narrativa, reflejando la expansión de la plaga fantasmal:
 	
-    Medidor de cobertura / Meta visible:
+Medidor de cobertura / Meta visible:
         La interfaz muestra de forma clara el porcentaje de suciedad necesario para que el fantasma reclame esa zona y desbloquee la salida/siguiente área.
 
-    Puntos de transición lógicos:
+Puntos de transición lógicos:
         El paso de un nivel al siguiente ocurre de forma orgánica dentro del mundo:
             Tras arruinar la casa, el fantasma atraviesa la puerta trasera o ventana hacia el patio.
             Tras arruinar el patio, derriba la reja o se cuela por el portón hacia la calle de la vecindad.
 
-	¿Cómo navega el jugador entre niveles?
+¿Cómo navega el jugador entre niveles?
 	En el Modo Historia / Progresión principal:
 	La navegación es lineal y continua. Al alcanzar el porcentaje de suciedad requerido, se reproduce una pequeña animación de victoria y el jugador se traslada inmediatamente a la siguiente zona.
 	En el Menú de Selección de Niveles:
@@ -272,7 +271,7 @@ Implementados con disparadores directos en el código (AudioStreamPlayer2D.play(
 
 Perfil del jugador objetivo
 
-	Demografía:
+Demografía:
 	Jugadores de todas las edades, con un enfoque principal en jóvenes (10-24 años) debido a la estética cartoon y pixel art. Plataforma objetivo principal: PC (teclado/ratón) con posible port a Web (navegadores). 
 	Intereses:
 	Jugadores que disfrutan de juegos casuales y arcades de ritmo rápido. Aquellos que buscan experiencias mecánicas sencillas de entender, con un bucle de jugabilidad adictivo (Siguiendo un pensamiento de "un nivel más"). Disfrutan del  estilo dibujos animados y estéticas de Halloween o spooky. 
@@ -288,7 +287,7 @@ Identificación de Influencias y Referencias
 
 Valor de Sloppy Spectre
 
-	Lo que hace único a Sloppy Spectre frente a sus influencias es la inversión del clásico estándar de la cacería de fantasmas. A diferencia de juegos como Luigi's Mansion o Pac-Man, donde el objetivo del jugador es limpiar el mapa o eliminar la amenaza paranormal, aquí el jugador es la amenaza que debe sabotear el orden establecido.
+Lo que hace único a Sloppy Spectre frente a sus influencias es la inversión del clásico estándar de la cacería de fantasmas. A diferencia de juegos como Luigi's Mansion o Pac-Man, donde el objetivo del jugador es limpiar el mapa o eliminar la amenaza paranormal, aquí el jugador es la amenaza que debe sabotear el orden establecido.
 	El proyecto destaca por fusionar la satisfacción de la gestión territorial con la tensión de evadir enemigos invencibles. Al eliminar por completo las mecánicas de combate directo y las barras de vida, la experiencia destila la adrenalina pura de la evasión y la eficiencia de movimiento, condensando un alto nivel de competitividad personal en un ciclo de juego rápido.
 
 Riesgos, Trade-offs y Alcance del MVP
