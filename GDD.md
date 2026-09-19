@@ -15,7 +15,7 @@ Jesús Emiliano Gutiérrez Luna
 Karol Citlaly Ramírez Martínez
 
 Fecha de publicación:
-18 de Septiembre: 
+18 de Septiembre del 2026 
 Número de versión.
 Version 1
 
@@ -29,7 +29,7 @@ El jugador inicia en el centro de la escena, emergiendo de un portal espiritual 
 Levitando libremente en 4 direcciones en vista superior 2D, atravesando todo el escenario sin colisiones de terreno y esquivando únicamente los conos de luz de la linterna del limpiador.	
 	
 ¿Cómo termina?
-	Victoria final: Tras superar el nivel del vecindario al completar más del 80% de suciedad, spooky celebra y la zona queda cubierto de ectoplasma verde fluorescente.
+	Victoria final: Tras superar el nivel del vecindario al completar más del 80% de suciedad, Spooky celebra y la zona queda cubierto de ectoplasma verde fluorescente.
 	Derrota: Si el tiempo expira sin alcanzar al menos el 80% o el escenario llega al 0% de suciedad, el limpiador sanitiza el portal y Spooky queda desvanecido por una aspiradora.
 
 Gameplay
@@ -50,7 +50,7 @@ Descripción de tipos de gameplay.
 	
 Justificación de Diseño
 
--Género y Mecánicas : Se eligió el formato con perspectiva superior porque facilita un bucle de juego rápido e intuitivo, ideal para partidas cortas de 2 minutos. Esta perspectiva permite al jugador tener una lectura clara del terreno limpio frente al sucio (vital para la condición de victoria) y planificar rutas de evasión al observar el patrón del limpiador desde un punto ventajoso.
+-Género y Mecánicas: Se eligió el formato con perspectiva superior porque facilita un bucle de juego rápido e intuitivo, ideal para partidas cortas de 2 minutos. Esta perspectiva permite al jugador tener una lectura clara del terreno limpio frente al sucio (vital para la condición de victoria) y planificar rutas de evasión al observar el patrón del limpiador desde un punto ventajoso.
 	-Temática y Narrativa: La rivalidad entre un fantasma desordenado y un conserje  justifica de manera natural la mecánica de control de territorio. Además, el estilo visual de pixel art con contrastes de iluminación permite que el ectoplasma verde fluorescente resalte sobre los escenarios cotidianos, otorgando una gratificación visual inmediata al jugador. Esta temática "apta para todo público" asegura un mayor alcance demográfico.
 	-Plataforma (PC / Web): Se seleccionó PC (con posible exportación a Web) ya que los controles WASD + Barra Espaciadora son un estándar altamente intuitivo para los jugadores de teclado. Además, el motor Godot 4 ofrece una excelente optimización para exportar juegos 2D a navegadores (HTML5), lo que facilitará la distribución, el testeo y la accesibilidad del proyecto sin requerir hardware de gama alta.
 	
@@ -150,7 +150,19 @@ Mecánicas del juego.
    Ectoplasma Súper Viscoso: Reduce la velocidad de aspirado del conserje por 5 segundos.
 
 * Sistema de Vidas y Muerte:  
-  El fantasma no "muere", pero los *stuns* consumen un tiempo valioso, aumentando la probabilidad de perder por agotamiento de tiempo.  
+  El fantasma no "muere", pero los *stuns* consumen un tiempo valioso, aumentando la probabilidad de perder por agotamiento de tiempo.
+
+Objetivos del Juego. 
+* Objetivo Principal: Alcanzar y superar el 80% de suciedad global en el escenario antes de que se agote el tiempo límite de 120 segundos.
+* Objetivo de Gestión: Mantener el tanque de ectoplasma abastecido y trazar rutas de cobertura eficientes para evitar que el porcentaje de suciedad descienda debido a la limpieza del NPC.
+
+Reglas del Juego. 
+
+* El jugador gasta ectoplasma al ensuciar el lugar, lo que disminuye las 100 unidades disponibles en su tanque. No se puede disparar con el tanque vacío.
+* El jugador debe regresar al Portal Espiritual (ubicado en el centro de la sala) para reabastecer sus 100 unidades de ectoplasma y utilizarlo como zona de resguardo. Fuera de esta zona, el jugador puede ser aturdido. 
+* Si el limpiador alcanza al jugador, su personaje no puede moverse ni disparar durante 3 segundos. 
+* El porcentaje de suciedad del escenario no es estático; puede ser aumentado por el jugador o disminuido por el limpiador. 
+* El jugador pierde la partida de forma instantánea si el cronómetro llega a 0 sin alcanzar el 80% de suciedad, o si el porcentaje de suciedad del escenario cae al 0%.
 
 Progresión del juego  
 	  
