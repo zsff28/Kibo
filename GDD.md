@@ -35,7 +35,31 @@ Levitando libremente en 4 direcciones en vista superior 2D, atravesando todo el 
 Gameplay
 
 Bucle central
-	El núcleo del juego se centra en el control de territorio bajo una constante presión de tiempo. El jugador debe alternar rápidamente entre un comportamiento ofensivo (rociar ectoplasma en zonas limpias) y uno de gestión y evasión (huir del limpiador y regresar al portal central a recargar munición). Es una dinámica de "gato y ratón" donde el terreno es el tablero de puntuación.
+
+Input del Jugador. 
+El jugador se mueve con WASD o las flechas y presiona la Barra Espaciadora para ensuciar el escenario. 
+
+Respuesta del sistema.  
+* El tanque de ectoplasma disminuye de forma continua (de 100 a 0 unidades). 
+* Las casillas del mapa bajo el fantasma cambian su textura a verde fluorescente. 
+* La variable global Suciedad_Zona aumenta en tiempo real. 
+* El limpiador, guiado por su máquina de estados, ajusta su ruta mediante pathfinding para dirigirse a limpiar el ectoplasma o a interceptar al jugador si entra en su cono de luz. 
+Cambio de Estado.  
+* Si el jugador vacía el tanque o se acerca un peligro debe regresar al Portal Espiritual central para recargar. 
+* Si el limpiador toca al jugador con su linterna se activa un estado de Stun, Spooky queda inmovilizado durante 3 segundos mientras el limpiador aprovecha para aspirar y  reducir el porcentaje de suciedad.
+
+Decisión. El jugador decide si: 
+* Continúa ensuciando: Arriesgarse a cubrir zonas lejanas antes de que el limpiador las alcance. 
+* Se reposiciona: Esquivar el cono de luz de la linterna y trazar una ruta alternativa para evitar el aturdimiento. 
+* Regresar a la zona segura: Volver al portal central para reabastecer el tanque de 
+ectoplasma.
+
+Repetición con variación. El ciclo se repite: 
+* Menos tiempo restante en el reloj (especialmente crítico en los últimos 30 segundos). 
+* Un limpiador con mayor velocidad de desplazamiento y aspirado (conforme se avanza del Nivel 1 al Nivel 3). 
+* Zonas del mapa cada vez más amplias, exigiendo mayor eficiencia en el uso de los recursos y el movimiento. 
+
+El núcleo del juego se centra en el control de territorio bajo una constante presión de tiempo. El jugador debe alternar rápidamente entre un comportamiento ofensivo (rociar ectoplasma en zonas limpias) y uno de gestión y evasión (huir del limpiador y regresar al portal central a recargar munición). Es una dinámica de "gato y ratón" donde el terreno es el tablero de puntuación.
 	https://github.com/zsff28/Kibo/blob/main/Arte_Conceptual/HUD%20por%20nivel.jpeg
 	
 Controles
@@ -109,6 +133,10 @@ Puntos de transición lógicos:
 Experiencia de juego.
 * Descripción de la experiencia:
   Un juego arcade rápido, tenso y cómico de "gato y ratón" donde el tiempo apremia constantemente.
+  
+La experiencia está diseñada para condensarse en partidas rápidas de 2 minutos por nivel, provocando adrenalina por la urgencia de ver el tiempo agotarse. El jugador no puede detenerse si quiere seguir manchando el área. El juego no cuenta con combare directo, por lo que la tensión y el desafío se busca generar al tener al limpiador persiguiendo constantemente al jugador.  
+
+Finalmente, otra experiencia importante que se busca generar en el jugador es esa competencia personal en uno mismo. Gracias a su diseño arcade, el juego invita a la rejugabilidad inmediata, motivando al usuario a perfeccionar sus rutas de evasión y optimizar su gestión de recursos (el tanque de 100 unidades) para superar sus propias marcas de eficiencia. 
 
 * Condiciones:  
   * Ganar: Alcanzar el 80% de suciedad dentro de los 120 segundos.
