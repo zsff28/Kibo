@@ -51,7 +51,7 @@ Descripción de tipos de gameplay.
 Justificación de Diseño
 
 -Género y Mecánicas: Se eligió el formato con perspectiva superior porque facilita un bucle de juego rápido e intuitivo, ideal para partidas cortas de 2 minutos. Esta perspectiva permite al jugador tener una lectura clara del terreno limpio frente al sucio (vital para la condición de victoria) y planificar rutas de evasión al observar el patrón del limpiador desde un punto ventajoso.
-	-Temática y Narrativa: La rivalidad entre un fantasma desordenado y un conserje  justifica de manera natural la mecánica de control de territorio. Además, el estilo visual de pixel art con contrastes de iluminación permite que el ectoplasma verde fluorescente resalte sobre los escenarios cotidianos, otorgando una gratificación visual inmediata al jugador. Esta temática "apta para todo público" asegura un mayor alcance demográfico.
+	-Temática y Narrativa: La rivalidad entre un fantasma desordenado y un conserje justifica de manera natural la mecánica de control de territorio. Además, el estilo visual de Pixel Art con contrastes de iluminación permite que el ectoplasma verde fluorescente resalte sobre los escenarios cotidianos, otorgando una gratificación visual inmediata al jugador. Esta temática "apta para todo público" asegura un mayor alcance demográfico.
 	-Plataforma (PC / Web): Se seleccionó PC (con posible exportación a Web) ya que los controles WASD + Barra Espaciadora son un estándar altamente intuitivo para los jugadores de teclado. Además, el motor Godot 4 ofrece una excelente optimización para exportar juegos 2D a navegadores (HTML5), lo que facilitará la distribución, el testeo y la accesibilidad del proyecto sin requerir hardware de gama alta.
 	
 Requerimientos Técnicos.
@@ -62,7 +62,7 @@ Requerimientos Técnicos.
 	
 Implementación de Mecánicas:
 	IA del Limpiador: Implementado por el programador mediante NavigationAgent2D para pathfinding, esquivando paredes para alcanzar manchas de ectoplasma o patrullar. Sus rutas y comportamientos no serán "hard coded", 	sino controlados por un sistema de Máquina de Estados (State Machine: Patrullando, Aspirando, Persiguiendo luz).
-	Sistema de manchas (Ectoplasma):Implementado meediante pintado en un TileMap para calcular el porcentaje de área cubierta (% de suciedad).
+	Sistema de manchas (Ectoplasma): Implementado meediante pintado en un TileMap para calcular el porcentaje de área cubierta (% de suciedad).
 	
 ¿Qué diseño de herramientas usará el juego?
 	Los escenarios se construirán utilizando el sistema integrado de TileMaps de Godot. No se crearán herramientas externas complejas, se dependerá del editor de nodos y variables exportadas para ajustar tiempos y 		velocidad de los conserjes por nivel.
@@ -73,7 +73,7 @@ El juego se desarrolla en un vecindario suburbano cotidiano, aparentemente tranq
 	
 Descripción general de los niveles
 
-Nivel 1: El Interior de la Casa :
+Nivel 1: El Interior de la Casa:
         Habitaciones interconectadas (sala, cocina, habitaciones).
         Gran densidad de objetos cotidianos (alfombras impecables, floreros, refrigeradores, cortinas).
         Rutas estrechas que facilitan emboscadas y cobertura en rincones o atravesando muebles.
@@ -104,7 +104,7 @@ Puntos de transición lógicos:
 	En el Modo Historia / Progresión principal:
 	La navegación es lineal y continua. Al alcanzar el porcentaje de suciedad requerido, se reproduce una pequeña animación de victoria y el jugador se traslada inmediatamente a la siguiente zona.
 	En el Menú de Selección de Niveles:
-	Se representa mediante un plano/mapa ilustrado de la propiedad y el vecindario. Los niveles ya conquistados aparecen marcados con manchas de ectoplasma, mostrando la puntuación máxima obtenida ( y permitiendo 		rejugarlos.
+	Se representa mediante un plano/mapa ilustrado de la propiedad y el vecindario. Los niveles ya conquistados aparecen marcados con manchas de ectoplasma, mostrando la puntuación máxima obtenida (y permitiendo rejugarlos).
 
 Experiencia de juego.
 * Descripción de la experiencia:
@@ -166,7 +166,7 @@ Reglas del Juego.
 
 Progresión del juego  
 	  
-¿Cómo interactuan la historia y el gameplay?
+¿Cómo interactúan la historia y el gameplay?
 La historia se enfoca en Spooky, un fantasma travieso que quiere desordenar, y el limpiador, quien busca lo contrario: dejar el lugar completamente limpio. Esta rivalidad es la base para todo el gameplay: Spooky ensucia y escapa del limpiador mientras el limpiador ordena y aspira todo lo que Spooky deja. 
 
 La progresión de niveles también es coherente con la historia. Primero, Spooky ensucia toda la casa, luego el jardín y, finalmente, el vecindario, demostrando cómo el fantasma va manchando, ensuciando y apoderándose de todo su entorno. 
@@ -194,7 +194,7 @@ Nivel 1. Introducción / Tutorial
 * HUD del nivel. Igual en todos los niveles. En la esquina superior derecha se muestra el tiempo restante. En la parte superior de la pantalla, en el centro, el porcentaje del escenario cubierto. El personaje principal tiene un tanque que muestra la cantidad de unidades restantes.
 * Mecánicas específicas: No hay mecánicas específicas por nivel. Las mecánicas son las mismas en los 3 niveles.
   * Tiempo: 120 segundos (02:00 minutos).
-  * Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
+  * Daño / Efectos: El contacto con la linterna o el limpiador provoca inmovilidad del personaje durante 3 segundos.
 
 Nivel 2. Intermedio.
 
@@ -206,7 +206,7 @@ Nivel 2. Intermedio.
 * HUD del nivel. Igual en todos los niveles. En la esquina superior derecha se muestra el tiempo restante. En la parte superior de la pantalla, en el centro, el porcentaje del escenario cubierto. El personaje principal tiene un tanque que muestra la cantidad de unidades restantes.
 * Mecánicas específicas:  No hay mecánicas específicas por nivel. Las mecánicas son las mismas en los 3 niveles.
   * Tiempo: 120 segundos (02:00 minutos).
-  * Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
+  * Daño / Efectos: El contacto con la linterna o el limpiador provoca inmovilidad del personaje durante 3 segundos.
 
 Nivel 3. Difícil.Descripción: Nivel final. El vecindario. En el centro se encuentra el portal para recargar el tanque. El nivel no cuenta con obstáculos fuera del enemigo principal: el limpiador.
 * Objetivo: Alcanzar al menos el 80% de suciedad en el suelo antes de que finalice el tiempo.
@@ -216,7 +216,7 @@ Nivel 3. Difícil.Descripción: Nivel final. El vecindario. En el centro se encu
 * HUD del nivel. Igual en todos los niveles. En la esquina superior derecha se muestra el tiempo restante. En la parte superior de la pantalla, en el centro, el porcentaje del escenario cubierto. El personaje principal tiene un tanque que muestra la cantidad de unidades restantes.
 * Mecánicas específicas: No hay mecánicas específicas por nivel. Las mecánicas son las mismas en los 3 niveles.
   * Tiempo: 120 segundos (02:00 minutos).
-  * Daño / Efectos: El contacto con la linterna o el limpiador provoca un inmovilidad del personaje durante 3 segundos.
+  * Daño / Efectos: El contacto con la linterna o el limpiador provoca inmovilidad del personaje durante 3 segundos.
 
 Player Characters
 
@@ -286,7 +286,7 @@ Perfil del jugador objetivo
 Demografía:
 	Jugadores de todas las edades, con un enfoque principal en jóvenes (10-24 años) debido a la estética cartoon y pixel art. Plataforma objetivo principal: PC (teclado/ratón) con posible port a Web (navegadores). 
 	Intereses:
-	Jugadores que disfrutan de juegos casuales y arcades de ritmo rápido. Aquellos que buscan experiencias mecánicas sencillas de entender, con un bucle de jugabilidad adictivo (Siguiendo un pensamiento de "un nivel más"). Disfrutan del  estilo dibujos animados y estéticas de Halloween o spooky. 
+	Jugadores que disfrutan de juegos casuales y arcades de ritmo rápido. Aquellos que buscan experiencias mecánicas sencillas de entender, con un bucle de jugabilidad adictivo (Siguiendo un pensamiento de "un nivel más"). Disfrutan del estilo dibujos animados y estéticas de Halloween o spooky. 
 	Hábitos de juego:
 	Jugadores que prefieren sesiones cortas e intensas (partidas de 2 minutos). Tolerantes a la repetición y que buscan superar sus propios récords de tiempo o perfeccionar su estrategia de movimiento.
 	
